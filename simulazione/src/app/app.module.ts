@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ActivityRequestComponent } from './Components/activity-request/activity-request.component';
 import { ActivityListComponent } from './Components/activity-list/activity-list.component';
 import { ActivityDetailComponent } from './Components/activity-detail/activity-detail.component';
@@ -19,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

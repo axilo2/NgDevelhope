@@ -1,1 +1,19 @@
-<p>activity-request works!</p>
+
+<form>
+<div>
+    <h1>Activity</h1>
+    <div class="container d-flex p-3">
+        <label for="tipo">Tipo</label>
+        <select name="data" id="data">
+            <option value="data" *ngFor="">qualcosa</option>
+        </select>
+
+        <label for="partecipanti">Partecipanti</label>
+        <input type="text">
+
+        <label for="">Prezzo:</label>
+        <input type="range">
+    </div>
+    <button class="btn btn-primary" type="submit" (click)="getData()" routerLink="/activity-list">click</button>
+</div>
+</form>

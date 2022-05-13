@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IData } from 'src/app/Models/data';
+import { DataService } from 'src/app/Services/data.service';
 
 @Component({
   selector: 'app-activity-request',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivityRequestComponent implements OnInit {
 
-  constructor() { }
+  prop: IData[] = [];
+
+  constructor(private data: DataService) { }
 
   ngOnInit(): void {
+    this.getData()
+  }
+
+  getData() {
+    this.data.getAllData().subscribe(data => 
+      console.log(data)
+    );
+  }
+
+  submit(f: any) {
+    console.log('submit', f)
   }
 
 }
