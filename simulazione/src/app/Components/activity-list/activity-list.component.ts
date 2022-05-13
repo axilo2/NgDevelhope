@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/Services/data.service';
 
 @Component({
   selector: 'app-activity-list',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivityListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit(): void {
   }

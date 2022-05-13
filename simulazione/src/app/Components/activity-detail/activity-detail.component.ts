@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/Services/data.service';
 
 @Component({
   selector: 'app-activity-detail',
@@ -8,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class ActivityDetailComponent implements OnInit {
 
   title: string = 'titolo';
+  img: string = 'simulazione/src/assets/mortarboard.png'
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit(): void {
   }

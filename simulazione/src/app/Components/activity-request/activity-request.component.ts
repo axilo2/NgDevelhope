@@ -23,8 +23,5 @@ export class ActivityRequestComponent implements OnInit {
     );
   }
 
-  submit(f: any) {
-    console.log('submit', f)
-  }
 
 }
